@@ -4,8 +4,10 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve - open"
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch",
+    "start": "webpack serve --hot --mode development --devtool eval-source-map",
+    "build": "webpack --devtool source-map"
   },
   "keywords": [],
   "author": "",

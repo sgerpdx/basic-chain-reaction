@@ -5,4 +5,4 @@ const App = () => {
   return <h1>Here is ye olde App!</h1>;
 };
 
-render(<App />, document.getElementById("app"));
+render(<App />, document.getElementById("root"));
