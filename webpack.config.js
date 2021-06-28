@@ -101,10 +101,10 @@ module.exports = {
         },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/1,
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         use: { loader: 'url-loader' },
-      }
+      },
     ],
   },
   // plugins: [htmlPlugin],
