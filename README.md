@@ -7,5 +7,5 @@
 
 ### Notes on status and intended usage:
 
-* App tests functional when served locally, but needs further trials in terms of GitHub CI, etc.
-* Ideally this may serve as the basis for a minimalist react bootstrap/template.
+* App is functional when served locally, but needs further trials in terms of GitHub CI, etc.
+* Ideally this may serve as the basis for a minimalist React bootstrap/template.
