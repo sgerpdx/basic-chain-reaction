@@ -1,14 +1,9 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-// const htmlPlugin = new HtmlWebPackPlugin({
-//   template: "./src/index.html",
-//   filename: "./index.html",
-// });
 //const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-//need to learn what exactly this block of code is doing:
 const env = Object.entries({
   ...require('dotenv').config(),
   ...process.env,
@@ -19,12 +14,6 @@ const env = Object.entries({
 
 // entry and output are set to defaults if not specified
 module.exports = {
-  // entry: './src/index.js',
-  // output: {
-  //   filename: 'bundle.[hash].js',
-  //   path: path.resolve(__dirname, './dist'),
-  //   publicPath: '/',
-  // },
   devServer: {
     port: 7888,
     historyApiFallback: true,
@@ -55,7 +44,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -107,5 +96,4 @@ module.exports = {
       },
     ],
   },
-  // plugins: [htmlPlugin],
 };

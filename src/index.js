@@ -1,8 +1,5 @@
-import { render } from "react-dom";
-import React from "react";
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/app/App';
 
-const App = () => {
-  return <h1>Here is ye olde App!</h1>;
-};
-
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
