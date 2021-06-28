@@ -5,6 +5,7 @@
 - A variety of other files have been added, e.g. .gitignore and .env.
 - Basic functionality is present in terms of rendering and snapshot testing.
 
-### App tests functional when served locally, but needs further trials in terms of GitHub CI, etc.
+### Notes on status and intended usage:
 
-### Ideally this may serve as the basis for a minimalist react bootstrap/template.
+* App tests functional when served locally, but needs further trials in terms of GitHub CI, etc.
+* Ideally this may serve as the basis for a minimalist react bootstrap/template.
