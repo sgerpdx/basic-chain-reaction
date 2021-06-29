@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
-/* html,
+html,
 body {
   height: 100%;
   width: 100%;
-} */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 .mainArea {
   height: 80vh;
@@ -43,4 +46,17 @@ body {
   justify-content: center;
   align-items: center;
   border: solid 1px purple;
+}
+
+.navLowerLeft,
+.footnoteArea,
+.navLowerRight,
+.navUpperLeft,
+.titleArea,
+.navUpperRight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
